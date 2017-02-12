@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>phaser game with nodejs server</title>
+	<script src="client/phaser.js"></script>
+	<script src="client/ui/lib/slick-ui.min.js"></script>
+	<script src="client/socket.io.js"></script>
+	<script src="client/phaser-spine.js"></script>
+	<script src="public/map.js"></script>
+	<script src="client/game.js"></script>
+	<script src="client/ui/ui_control_factory.js"></script>
+	<script src="client/ui/ui_manager.js"></script>
+	<script src="client/start_menu.js"></script>
+	<script src="client/logic.js"></script>
+	<script src="client/spine_sprite.js"></script>
+	<script src="client/gaming_logic.js"></script>
+</head>
+<body>
+	<div id="game"></div>
+	<script type="text/javascript">
+		(function(){
+			//diable right click
+			document.addEventListener('contextmenu', event => event.preventDefault());
+			
+			var game = new Phaser.Game(928, 928, Phaser.AUTO, 'game');
+			game.state.add('StartMenu', Game.StartMenu);
+			game.state.add('Logic', Game.Logic);
+			game.state.add('GamingLogic', Game.GamingLogic);
+			game.state.start('StartMenu');
+		})();
+	</script>
+</body>
+</html>

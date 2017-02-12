@@ -1,0 +1,77 @@
+{
+	"controls":[
+		{
+			"name"	:"block_list",
+			"type"	:"panel",
+			"x"		:0,
+			"y"		:0,
+			"width"	:200,
+			"height":500,
+			"children":[
+				{
+					"name"	:"block",
+					"type"	:"button",
+					"x"		:0,
+					"y"		:0,
+					"width"	:80,
+					"height":40,
+					"text"	:"block"
+				},
+				{
+					"name"	:"eject_block",
+					"type"	:"button",
+					"x"		:0,
+					"y"		:40,
+					"width"	:130,
+					"height":40,
+					"text"	:"eject_block"
+				},
+				{
+					"name"	:"icy_block",
+					"type"	:"button",
+					"x"		:0,
+					"y"		:80,
+					"width"	:100,
+					"height":40,
+					"text"	:"icy_block"
+				},
+				{
+					"name"	:"teleport_block",
+					"type"	:"button",
+					"x"		:0,
+					"y"		:120,
+					"width"	:160,
+					"height":40,
+					"text"	:"teleport_block"
+				},
+				{
+					"name"	:"sticky_block",
+					"type"	:"button",
+					"x"		:0,
+					"y"		:160,
+					"width"	:140,
+					"height":40,
+					"text"	:"sticky_block"
+				},
+				{
+					"name"	:"born_pos",
+					"type"	:"button",
+					"x"		:0,
+					"y"		:200,
+					"width"	:100,
+					"height":40,
+					"text"	:"born_pos"
+				}
+			]
+		},
+		{
+			"name"	:"btn_hide",
+			"type"	:"button",
+			"x"		:201,
+			"y"		:0,
+			"width"	:60,
+			"height":40,
+			"text"	:"<-->"
+		}
+	]
+}
